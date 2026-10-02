@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ultimate Brand Pack — Your Brand Kits</title>
+<meta name="description" content="O pack definitivo para quem tem (ou quer começar) uma marca de roupa: +500 mockups, +400 vetores, planilhas, checklist e muito mais.">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1281251029982984');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1281251029982984&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0D0D0D;
+    --card: #141414;
+    --muted-bg: #1F1F1F;
+    --border: #2E2E2E;
+    --fg: #FAFAFA;
+    --muted: #A6A6A6;
+    --green: #21C45D;
+    --green-hover: #1CAD51;
+    --red: #EF4444;
+    --red-dark: #DC2828;
+    --yellow: #FACC15;
+    --amber: #E7B008;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  a { color: inherit; text-decoration: none; }
+  img, video { max-width: 100%; height: auto; display: block; }
+  svg.i { width: 16px; height: 16px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+  .container { max-width: 1400px; margin: 0 auto; padding: 0 32px; }
+  .container-md { max-width: 896px; margin: 0 auto; padding: 0 32px; }
+  .container-sm { max-width: 736px; margin: 0 auto; padding: 0 16px; }
+  section { padding: 96px 16px; }
+  .section-title { font-size: 36px; font-weight: 700; line-height: 40px; text-align: center; }
+  .section-sub { font-size: 20px; color: var(--muted); text-align: center; margin-top: 16px; }
+
+  /* ---------- TOP BAR ---------- */
+  .top-bar {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--red); color: #fff;
+    min-height: 48px; padding: 8px 16px;
+    display: flex; align-items: center; justify-content: center; gap: 8px 24px; flex-wrap: wrap;
+    font-size: 14px; font-weight: 500; text-transform: uppercase; text-align: center;
+  }
+  .top-timer { display: flex; align-items: center; gap: 6px; font-weight: 700; }
+  .top-timer .box {
+    background: var(--red-dark); border-radius: 4px; padding: 4px 8px;
+    min-width: 34px; text-align: center; font-size: 16px;
+    font-variant-numeric: tabular-nums; box-shadow: inset 0 0 0 1px rgba(0,0,0,.15);
+  }
+
+  /* ---------- HEADER ---------- */
+  header {
+    height: 65px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center; padding: 0 16px;
+  }
+  header img { height: 38px; width: auto; }
+
+  /* ---------- HERO ---------- */
+  .hero { padding: 48px 16px 96px; }
+  .hero-grid {
+    display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 48px; align-items: center;
+  }
+  .hero-image img { width: 100%; height: auto; }
+  .badge {
+    display: inline-block; border: 1px solid var(--border); border-radius: 4px;
+    padding: 8px 16px; font-size: 14px; letter-spacing: .15em; text-transform: uppercase;
+    color: #E5E5E5; margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 60px; font-weight: 700; line-height: 60px; letter-spacing: -1.5px;
+    text-transform: uppercase; margin-bottom: 32px;
+  }
+  h1 span { display: block; color: var(--green); }
+  .hero-desc { font-size: 18px; line-height: 28px; color: var(--muted); max-width: 576px; margin-bottom: 24px; }
+  .rating { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+  .stars { display: flex; gap: 2px; color: var(--yellow); }
+  .stars svg { width: 16px; height: 16px; fill: currentColor; stroke: currentColor; }
+  .price-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 8px; }
+  .price { font-size: 48px; font-weight: 700; line-height: 1.1; color: var(--green); }
+  .price-old { font-size: 18px; color: var(--muted); text-decoration: line-through; }
+  .discount {
+    background: rgba(239,68,68,.2); color: var(--red); font-size: 12px; font-weight: 600;
+    padding: 4px 12px; border-radius: 9999px;
+  }
+  .ending { display: flex; align-items: center; gap: 8px; color: var(--red); font-size: 14px; font-weight: 500; margin-bottom: 16px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--red); animation: blink 1.5s infinite; }
+  @keyframes blink { 50% { opacity: .35; } }
+  .pay-info { font-size: 14px; color: var(--muted); margin-bottom: 24px; }
+
+  .btn {
+    display: inline-block; background: var(--green); color: #fff; font-weight: 700;
+    border-radius: 6px; text-align: center; cursor: pointer; border: 0;
+    transition: background .2s, transform .2s;
+    animation: glow 2s ease-in-out infinite;
+  }
+  .btn:hover { background: var(--green-hover); transform: translateY(-1px); }
+  .btn-hero { font-size: 18px; padding: 24px 48px; }
+  .btn-lg { font-size: 20px; padding: 32px 64px; }
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 21.6px 0 rgba(33,196,93,.42); }
+    50% { box-shadow: 0 0 25.6px 0 rgba(33,196,93,.46); }
+  }
+
+  .trust { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 40px; font-size: 14px; color: var(--muted); }
+  .trust span { display: flex; align-items: center; gap: 8px; }
+  .trust svg { color: var(--green); }
+
+  .hero-list { margin-top: 56px; }
+  .hero-list h2 { font-size: 24px; font-weight: 700; line-height: 32px; margin-bottom: 16px; }
+  .checks { list-style: none; }
+  .checks li { display: flex; gap: 16px; padding: 6px 0; font-size: 16px; line-height: 24px; color: #D4D4D4; }
+  .checks svg { color: var(--green); margin-top: 4px; }
+
+  /* ---------- PACK CONTENT ---------- */
+  .pack .section-title { margin-bottom: 64px; }
+  .pack-block { text-align: center; }
+  .pack-block + .pack-block { margin-top: 112px; }
+  .pack-block img { width: 448px; margin: 0 auto; }
+  .pack-block h3 { font-size: 30px; font-weight: 700; line-height: 36px; margin: 40px 0 24px; }
+  .dots { list-style: none; display: inline-block; text-align: left; }
+  .dots li { display: flex; align-items: center; gap: 12px; padding: 6px 0; font-size: 18px; color: var(--fg); }
+  .dots li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+
+  /* ---------- MEMBERS ---------- */
+  .video-frame {
+    margin-top: 32px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);
+    background: #000; box-shadow: 0 10px 15px -3px rgba(0,0,0,.1);
+  }
+  .video-frame video { width: 100%; aspect-ratio: 16/9; object-fit: cover; pointer-events: none; }
+  .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 48px; text-align: center; }
+  .feature-icon {
+    width: 48px; height: 48px; border-radius: 8px; background: var(--muted-bg); color: var(--amber);
+    display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px;
+  }
+  .feature-icon svg { width: 24px; height: 24px; }
+  .features h3 { font-size: 16px; font-weight: 600; line-height: 24px; margin-bottom: 4px; }
+  .features p { font-size: 14px; color: var(--muted); line-height: 20px; }
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testi-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 16px; margin-top: 48px; }
+  .testi { background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .testi img { width: 100%; height: auto; }
+
+  /* ---------- BONUS ---------- */
+  .bonus { padding-top: 0; }
+  .bonus img { width: 100%; max-width: 832px; margin: 32px auto 0; }
+  .bonus .caption { font-size: 20px; text-align: center; margin-top: 24px; }
+
+  /* ---------- URGENCY ---------- */
+  .urgency { padding: 128px 16px; text-align: center; }
+  .urgency-badge {
+    display: inline-flex; align-items: center; gap: 8px; color: var(--red);
+    font-size: 14px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 16px;
+  }
+  .urgency-badge .dot { width: 12px; height: 12px; }
+  .urgency h2 { font-size: 30px; font-weight: 700; line-height: 36px; max-width: 480px; margin: 0 auto; }
+  .countdown { display: flex; justify-content: center; align-items: center; gap: 12px; margin: 24px 0 40px; }
+  .cd-box {
+    background: var(--card); border-radius: 6px; width: 76px; padding: 12px 0 10px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .cd-box .n { font-size: 36px; font-weight: 700; line-height: 40px; color: var(--red); }
+  .cd-box .l { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .cd-sep { font-family: ui-monospace, monospace; font-size: 30px; font-weight: 700; color: var(--red); }
+  .offer-text { font-size: 20px; color: var(--muted); }
+  .offer-old { font-size: 20px; color: var(--muted); text-decoration: line-through; margin-top: 32px; }
+  .big-price { font-size: 96px; font-weight: 700; line-height: 1; letter-spacing: -1px; color: var(--green); margin: 8px 0 32px; }
+  .offer-list { list-style: none; margin-bottom: 40px; }
+  .offer-list li { display: flex; justify-content: center; align-items: center; gap: 12px; padding: 8px 0; font-size: 18px; }
+  .offer-list svg { color: var(--green); width: 18px; height: 18px; }
+
+  /* ---------- FAQ ---------- */
+  .faq { padding-top: 32px; }
+  .faq .section-title { margin-bottom: 48px; }
+  .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 16px; overflow: hidden; }
+  .faq-q {
+    width: 100%; background: none; border: 0; color: var(--fg); font: inherit; font-size: 16px; text-align: left;
+    padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; cursor: pointer;
+  }
+  .faq-q:hover { text-decoration: underline; }
+  .faq-q svg { transition: transform .2s; }
+  .faq-item.open .faq-q svg { transform: rotate(180deg); }
+  .faq-a { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .25s ease; }
+  .faq-a > div { overflow: hidden; }
+  .faq-a p { padding: 0 24px 20px; color: var(--muted); font-size: 15px; line-height: 1.7; }
+  .faq-item.open .faq-a { grid-template-rows: 1fr; }
+
+  /* ---------- SUPPORT ---------- */
+  .support h2 { font-size: 30px; font-weight: 700; line-height: 36px; text-align: center; margin-bottom: 48px; }
+  .support-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 672px; margin: 0 auto; }
+  .support-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; text-align: center;
+    transition: border-color .2s;
+  }
+  .support-card:hover { border-color: var(--green); }
+  .support-icon {
+    width: 56px; height: 56px; border-radius: 50%; background: var(--muted-bg); color: var(--green);
+    display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px;
+  }
+  .support-icon svg { width: 24px; height: 24px; }
+  .support-card h3 { font-size: 16px; font-weight: 600; line-height: 24px; }
+  .support-card p { font-size: 14px; color: var(--muted); margin-top: 4px; }
+
+  /* ---------- FOOTER ---------- */
+  footer { border-top: 1px solid var(--border); padding: 48px 16px 120px; text-align: center; }
+  footer .logo { height: 40px; width: auto; margin: 0 auto 24px; }
+  .copy { font-size: 14px; color: var(--muted); margin-bottom: 40px; }
+  .footer-cols { display: flex; justify-content: center; gap: 80px; }
+  .footer-cols h4 { font-size: 14px; font-weight: 600; letter-spacing: .1em; margin-bottom: 20px; }
+  .footer-cols a { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; color: var(--muted); margin-bottom: 14px; }
+  .footer-cols a:hover { color: var(--fg); }
+  .footer-cols svg { color: var(--green); }
+
+  /* ---------- STICKY BOTTOM CTA ---------- */
+  .bottom-cta {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;
+    background: rgba(13,13,13,.95); backdrop-filter: blur(8px); border-top: 1px solid var(--border);
+    padding: 12px 16px; text-align: center;
+    transform: translateY(100%); transition: transform .3s;
+  }
+  .bottom-cta.show { transform: translateY(0); }
+  .bottom-cta .btn { font-size: 16px; padding: 14px 32px; width: 100%; max-width: 420px; animation: none; box-shadow: 0 0 15px rgba(33,196,93,.35); }
+
+  /* ---------- TOAST ---------- */
+  .toast {
+    position: fixed; left: 16px; bottom: 24px; z-index: 95;
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: 16px; min-width: 198px; box-shadow: 0 10px 15px -3px rgba(0,0,0,.3);
+    opacity: 0; transform: translateY(12px); transition: opacity .4s, transform .4s, bottom .3s; pointer-events: none;
+  }
+  .toast.show { opacity: 1; transform: translateY(0); }
+  body.cta-visible .toast { bottom: 96px; }
+  .toast .name { font-size: 14px; font-weight: 600; }
+  .toast .what { font-size: 14px; color: var(--muted); }
+  .toast .when { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 1024px) {
+    .testi-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: minmax(0,1fr); gap: 32px; }
+    .hero-image { max-width: 520px; margin: 0 auto; }
+  }
+  @media (max-width: 640px) {
+    .container, .container-md { padding: 0 4px; }
+    section { padding: 64px 16px; }
+    .hero { padding: 32px 16px 64px; }
+    .top-bar { font-size: 11px; gap: 10px; }
+    .top-timer .box { font-size: 14px; min-width: 30px; padding: 3px 6px; }
+    header img { height: 30px; }
+    .badge { font-size: 11px; letter-spacing: .12em; padding: 6px 12px; }
+    h1 { font-size: 40px; line-height: 42px; letter-spacing: -1px; }
+    .hero-desc { font-size: 16px; line-height: 26px; }
+    .price { font-size: 40px; }
+    .btn-hero { display: block; width: 100%; }
+    .btn-lg { display: block; width: 100%; padding: 24px; }
+    .section-title { font-size: 28px; line-height: 34px; }
+    .section-sub, .bonus .caption, .offer-text { font-size: 17px; }
+    .pack-block img { width: 100%; max-width: 380px; }
+    .pack-block h3 { font-size: 24px; }
+    .dots li, .offer-list li { font-size: 16px; }
+    .features { grid-template-columns: 1fr; }
+    .testi-grid { grid-template-columns: 1fr; }
+    .urgency { padding: 80px 16px; }
+    .urgency h2 { font-size: 24px; line-height: 30px; }
+    .countdown { gap: 6px; }
+    .cd-box { width: 64px; }
+    .cd-box .n { font-size: 28px; line-height: 34px; }
+    .cd-sep { font-size: 22px; }
+    .big-price { font-size: 64px; }
+    .support-grid { grid-template-columns: 1fr; }
+    .footer-cols { flex-direction: column; gap: 32px; }
+    .toast { display: none; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- SVG icons (Lucide) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  </svg>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <span>Aproveite o valor promocional desse pack antes que esgote!</span>
+    <div class="top-timer">
+      <span class="box" id="topMin">15</span>:<span class="box" id="topSec">00</span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <img src="logo-ybk.png" alt="YourBrandKits" width="834" height="137">
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-image">
+        <img src="pack-image.png" alt="The Ultimate Brand Pack" width="1406" height="1693">
+      </div>
+
+      <div>
+        <div class="badge">Todas as ferramentas em um único pack</div>
+        <h1>The Ultimate <span>Brand Pack</span></h1>
+        <p class="hero-desc">Esse pack foi desenvolvido ao longo de 3 anos, reunindo e criando ferramentas voltadas para donos de e-commerce de moda. Ele é o pack definitivo para quem tem (ou quer começar) uma marca de roupa. Mockups, vetores, planilhas, checklist e muito mais para transformar ideias em coleções reais e que vendem.</p>
+
+        <div class="rating">
+          <div class="stars">
+            <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+          </div>
+          <span>(<span id="reviewCount">2.632</span>)</span>
+        </div>
+
+        <div class="price-row">
+          <span class="price">R$97,90</span>
+          <span class="price-old">R$297,90</span>
+          <span class="discount">R$200 de desconto</span>
+        </div>
+        <div class="ending"><span class="dot"></span>Encerra em breve</div>
+        <div class="pay-info">Pagamento único • Acesso vitalício</div>
+
+        <a href="#oferta" class="btn btn-hero js-checkout" id="heroCta">Comprar agora</a>
+
+        <div class="trust">
+          <span><svg class="i"><use href="#i-shield"/></svg>Compra segura</span>
+          <span><svg class="i"><use href="#i-download"/></svg>Download instantâneo</span>
+          <span><svg class="i"><use href="#i-clock"/></svg>7 dias de garantia</span>
+        </div>
+
+        <div class="hero-list">
+          <h2>Ao baixar o pack, você vai ter acesso a:</h2>
+          <ul class="checks">
+            <li><svg class="i"><use href="#i-check"/></svg>+500 mockups em PNG, separados por tipo e cor, Full HD, com frente e costas.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>+400 Vetores de roupas para construção de fichas técnicas e organização de coleções.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>+30 Mockups para editar as cores em segundos no Photoshop.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Mockup Camiseta Oversized 3D – Blender</li>
+            <li><svg class="i"><use href="#i-check"/></svg>5 Planilhas essenciais para qualquer dono de marca de roupa.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Um PDF de Checklist de Coleção para se organizar não esquecer nada para o seu lançamento.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>+100 ideias de posts para suas redes sociais.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>🎁 Bônus: Modelo de Ficha Técnica.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO DO PACK -->
+  <section class="pack">
+    <div class="container">
+      <h2 class="section-title">Ao baixar o pack, você vai ter acesso a:</h2>
+
+      <div class="pack-block">
+        <img src="mockups-vetores.png" alt="Mockups e Vetores" width="1600" height="1200" loading="lazy">
+        <h3>Mockups e Vetores:</h3>
+        <ul class="dots">
+          <li>+500 Mockups PNG</li>
+          <li>+400 Vetores</li>
+          <li>+30 Mockups Photoshop</li>
+          <li>Arquivos 3D de Camiseta Oversized</li>
+        </ul>
+      </div>
+
+      <div class="pack-block">
+        <img src="planilhas.png" alt="Planilhas" width="1600" height="1200" loading="lazy">
+        <h3>Planilhas</h3>
+        <ul class="dots">
+          <li>Planilha de Precificação de Produto</li>
+          <li>Planilha de Organização Geral Trimestral</li>
+          <li>Planilha de Controle de Estoque</li>
+          <li>Planilha de Controle de Vendas</li>
+          <li>Planilha de Gestão de Influenciadores</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÁREA DE MEMBROS -->
+  <section class="members">
+    <div class="container-md">
+      <h2 class="section-title">Reunimos todas as ferramentas que donos de marca precisam.</h2>
+      <p class="section-sub">Um espaço organizado e simples para você acessar tudo</p>
+
+      <div class="video-frame">
+        <video src="area-de-membros.mp4" autoplay muted loop playsinline preload="metadata" disablePictureInPicture controlsList="nodownload nofullscreen noremoteplayback" oncontextmenu="return false;"></video>
+      </div>
+
+      <div class="features">
+        <div>
+          <div class="feature-icon"><svg class="i"><use href="#i-sparkles"/></svg></div>
+          <h3>Simples, rápido e ilimitado</h3>
+          <p>Interface intuitiva para você encontrar o que precisa</p>
+        </div>
+        <div>
+          <div class="feature-icon"><svg class="i"><use href="#i-folder"/></svg></div>
+          <h3>Baixe quando quiser e use sem limites</h3>
+          <p>Acesso vitalício a todos os arquivos</p>
+        </div>
+        <div>
+          <div class="feature-icon"><svg class="i"><use href="#i-refresh"/></svg></div>
+          <h3>Atualizações automáticas</h3>
+          <p>Novos conteúdos adicionados regularmente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">O que nossos clientes dizem</h2>
+      <p class="section-sub">Veja o feedback de quem já está usando o pack</p>
+
+      <div class="testi-grid">
+        <div class="testi"><img src="testimonial-1.png" alt="Depoimento 1" width="1179" height="933" loading="lazy"></div>
+        <div class="testi"><img src="testimonial-2.png" alt="Depoimento 2" width="1179" height="758" loading="lazy"></div>
+        <div class="testi"><img src="testimonial-3.png" alt="Depoimento 3" width="1179" height="657" loading="lazy"></div>
+        <div class="testi"><img src="testimonial-4.png" alt="Depoimento 4" width="1179" height="826" loading="lazy"></div>
+        <div class="testi"><img src="testimonial-5.png" alt="Depoimento 5" width="1178" height="263" loading="lazy"></div>
+        <div class="testi"><img src="testimonial-6.png" alt="Depoimento 6" width="1178" height="331" loading="lazy"></div>
+        <div class="testi"><img src="testimonial-7.png" alt="Depoimento 7" width="1178" height="345" loading="lazy"></div>
+        <div class="testi"><img src="testimonial-8.png" alt="Depoimento 8" width="1178" height="257" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BÔNUS -->
+  <section class="bonus">
+    <div class="container-md">
+      <h2 class="section-title">Comprando hoje você ganha</h2>
+      <img src="ficha-tecnica.png" alt="Modelo de ficha técnica em PDF para editar + exemplos de uso" width="1406" height="1693" loading="lazy">
+      <p class="caption">Modelo de ficha técnica em PDF para editar + exemplos de uso</p>
+    </div>
+  </section>
+
+  <!-- URGÊNCIA + OFERTA FINAL -->
+  <section class="urgency" id="oferta">
+    <div class="container-sm">
+      <div class="urgency-badge"><span class="dot"></span>Promoção encerra em breve</div>
+      <h2>Última chance: A promoção está acabando...</h2>
+
+      <div class="countdown">
+        <div class="cd-box"><div class="n" id="cdD">00</div><div class="l">Dias</div></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-box"><div class="n" id="cdH">00</div><div class="l">Hrs</div></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-box"><div class="n" id="cdM">15</div><div class="l">Min</div></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-box"><div class="n" id="cdS">00</div><div class="l">Seg</div></div>
+      </div>
+
+      <p class="offer-text">Aproveite hoje e leve o pacote completo por apenas</p>
+      <div class="offer-old">R$297,90</div>
+      <div class="big-price">R$97,90</div>
+
+      <ul class="offer-list">
+        <li><svg class="i"><use href="#i-check"/></svg>Pague uma vez apenas</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Acesso vitalício e atualizações</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Bônus: Ficha Técnica</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Acesso imediato</li>
+        <li><svg class="i"><use href="#i-check"/></svg>7 dias de garantia</li>
+      </ul>
+
+      <a href="#oferta" class="btn btn-lg js-checkout">Garantir agora!</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container-sm">
+      <h2 class="section-title">Perguntas Frequentes</h2>
+
+      <div class="faq-item">
+        <button class="faq-q">O que é o Ultimate Brand Pack?<svg class="i"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a"><div><p>O Ultimate Brand Pack é um pacote completo de ferramentas digitais desenvolvido para donos de e-commerce de moda. Inclui mockups, vetores, planilhas, checklists e muito mais para ajudar você a criar e gerenciar sua marca de roupa de forma profissional.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">O que está incluído no pack?<svg class="i"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a"><div><p>O pack inclui: +500 mockups em PNG (frente e costas, Full HD), +400 vetores para fichas técnicas, +30 mockups editáveis para Photoshop, Mockup de Camiseta Oversized 3D para Blender, 5 planilhas essenciais, PDF Checklist de Coleção, +100 ideias de posts para redes sociais, e como bônus: Modelo de Ficha Técnica profissional.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Como eu vou receber o produto?<svg class="i"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a"><div><p>Após a confirmação do pagamento, você receberá acesso imediato à área de membros onde poderá fazer o download de todos os arquivos. O acesso é enviado automaticamente para o e-mail cadastrado na compra.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Preciso pagar mensalidade?<svg class="i"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a"><div><p>Não! O pagamento é único. Você paga apenas uma vez e tem acesso vitalício a todo o conteúdo do pack, incluindo todas as atualizações futuras.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Posso usar os mockups em projetos comerciais?<svg class="i"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a"><div><p>Sim! Todos os mockups e materiais do pack podem ser usados em seus projetos comerciais. Você pode usar para criar catálogos, posts de redes sociais, materiais de venda e muito mais para sua marca.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Vocês oferecem suporte?<svg class="i"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a"><div><p>Sim! Oferecemos suporte via WhatsApp (44) 99816-0041 e por e-mail contato@yourbrandkits.com. Nossa equipe está pronta para ajudar com qualquer dúvida sobre o uso dos materiais.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Vocês adicionam novos conteúdos?<svg class="i"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a"><div><p>Sim! A área de membros recebe atualizações regulares com novos mockups, vetores e ferramentas. Todas as atualizações são gratuitas para quem já adquiriu o pack.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Funciona em quais programas?<svg class="i"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a"><div><p>Os mockups PNG funcionam em qualquer programa de edição de imagens. Os mockups editáveis são para Adobe Photoshop. O mockup 3D é para Blender. As planilhas funcionam no Excel ou Google Sheets. Os PDFs podem ser visualizados em qualquer leitor de PDF.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Tem garantia?<svg class="i"><use href="#i-chevron"/></svg></button>
+        <div class="faq-a"><div><p>Sim! Oferecemos 7 dias de garantia incondicional. Se por qualquer motivo você não ficar satisfeito, devolvemos 100% do seu dinheiro, sem perguntas.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPORTE -->
+  <section class="support">
+    <h2>Precisa de ajuda?</h2>
+    <div class="support-grid">
+      <a href="https://wa.me/5544998160041" target="_blank" rel="noopener" class="support-card">
+        <div class="support-icon"><svg class="i"><use href="#i-chat"/></svg></div>
+        <h3>Atendimento por WhatsApp</h3>
+        <p>(44) 99816-0041</p>
+      </a>
+      <a href="mailto:contato@yourbrandkits.com" class="support-card">
+        <div class="support-icon"><svg class="i"><use href="#i-mail"/></svg></div>
+        <h3>Atendimento por E-mail</h3>
+        <p>contato@yourbrandkits.com</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img class="logo" src="logo-ybk.png" alt="YourBrandKits" width="834" height="137" loading="lazy">
+    <p class="copy">© 2025 | Todos os Direitos Reservados.</p>
+    <div class="footer-cols">
+      <div>
+        <h4>CONTATO</h4>
+        <a href="https://instagram.com/yourbrandkits" target="_blank" rel="noopener"><svg class="i"><use href="#i-instagram"/></svg>@yourbrandkits</a>
+        <a href="mailto:contato@yourbrandkits.com">contato@yourbrandkits.com</a>
+      </div>
+      <div>
+        <h4>POLÍTICAS</h4>
+        <a href="#">Políticas de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CTA FIXA INFERIOR -->
+  <div class="bottom-cta" id="bottomCta">
+    <a href="#oferta" class="btn js-checkout">Comprar agora — R$97,90</a>
+  </div>
+
+  <!-- TOAST DE PROVA SOCIAL -->
+  <div class="toast" id="toast" aria-live="polite">
+    <div class="name" id="toastName">Camila Rodrigues</div>
+    <div class="what">Comprou o Ultimate Pack</div>
+    <div class="when" id="toastWhen">há 14 minutos atrás</div>
+  </div>
+
+  <script>
+    // ====== LINK DO CHECKOUT ======
+    // Cole aqui o link do seu checkout (Hotmart, Kiwify etc.).
+    // Enquanto estiver vazio, os botões rolam até a oferta final.
+    const CHECKOUT_URL = 'https://pay.kiwify.com.br/ixa9PvQ';
+
+    if (CHECKOUT_URL) {
+      document.querySelectorAll('.js-checkout').forEach(a => {
+        a.href = CHECKOUT_URL;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.addEventListener('click', () => {
+          if (window.fbq) fbq('track', 'InitiateCheckout', { value: 97.90, currency: 'BRL' });
+        });
+      });
+    }
+
+    // FAQ
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+    });
+
+    // Contador regressivo (15 min, reinicia ao zerar)
+    const pad = n => String(n).padStart(2, '0');
+    const DURATION = 15 * 60;
+    let left = DURATION;
+    function tick() {
+      const m = Math.floor(left / 60), s = left % 60;
+      document.getElementById('topMin').textContent = pad(m);
+      document.getElementById('topSec').textContent = pad(s);
+      document.getElementById('cdM').textContent = pad(m);
+      document.getElementById('cdS').textContent = pad(s);
+      left = left > 0 ? left - 1 : DURATION;
+    }
+    tick();
+    setInterval(tick, 1000);
+
+    // Contador de avaliações
+    let reviews = 2632;
+    setInterval(() => {
+      reviews += Math.floor(Math.random() * 3);
+      document.getElementById('reviewCount').textContent = reviews.toLocaleString('pt-BR');
+    }, 15000);
+
+    // CTA fixa: aparece depois que o botão do topo sai da tela
+    const bottomCta = document.getElementById('bottomCta');
+    new IntersectionObserver(([e]) => {
+      const show = !e.isIntersecting && e.boundingClientRect.top < 0;
+      bottomCta.classList.toggle('show', show);
+      document.body.classList.toggle('cta-visible', show);
+    }).observe(document.getElementById('heroCta'));
+
+    // Toast de prova social
+    const buyers = ['Camila Rodrigues', 'Fernanda Carvalho', 'Rafael Souza', 'Juliana Lima', 'Lucas Almeida',
+      'Mariana Costa', 'Pedro Henrique', 'Beatriz Santos', 'Gustavo Oliveira', 'Thiago Martins'];
+    const toast = document.getElementById('toast');
+    let idx = 0;
+    function showToast() {
+      document.getElementById('toastName').textContent = buyers[idx % buyers.length];
+      const min = 1 + Math.floor(Math.random() * 15);
+      document.getElementById('toastWhen').textContent = `há ${min} ${min === 1 ? 'minuto' : 'minutos'} atrás`;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 5000);
+      idx++;
+    }
+    setTimeout(showToast, 4000);
+    setInterval(showToast, 14000);
+  </script>
+</body>
+</html>
