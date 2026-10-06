@@ -604,13 +604,22 @@ src="https://www.facebook.com/tr?id=1281251029982984&ev=PageView&noscript=1"
     const CHECKOUT_URL = 'https://pay.kiwify.com.br/ixa9PvQ';
 
     if (CHECKOUT_URL) {
+      const checkoutUrl = new URL(CHECKOUT_URL);
+      const incomingParams = new URLSearchParams(window.location.search);
+      const trackingParams = [
+        'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content',
+        'src', 'sck', 's1', 's2', 's3', 'fbclid'
+      ];
+      trackingParams.forEach(key => {
+        const value = incomingParams.get(key);
+        if (value) checkoutUrl.searchParams.set(key, value);
+      });
       document.querySelectorAll('.js-checkout').forEach(a => {
-        a.href = CHECKOUT_URL;
+        a.href = checkoutUrl.toString();
         a.target = '_blank';
         a.rel = 'noopener';
-        a.addEventListener('click', () => {
-          if (window.fbq) fbq('track', 'InitiateCheckout', { value: 97.90, currency: 'BRL' });
-        });
+        // A Kiwify envia InitiateCheckout ao carregar o checkout.
+        // Não repetir aqui um evento independente para a mesma etapa.
       });
     }
 
