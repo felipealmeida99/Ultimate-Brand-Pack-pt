@@ -376,6 +376,14 @@ footer{padding-top:32px;padding-bottom:32px}
 .features{gap:20px}
 }
 </style>
+<!-- Microsoft Clarity: Ultimate Brand Pack PTBR -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+ t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window,document,"clarity","script","yvo50gn4dv");
+</script>
 </head>
 <body>
 
@@ -648,4 +656,13 @@ video.addEventListener('error',()=>{overlay.hidden=false;sound.hidden=true;messa
 
 document.querySelectorAll('.faq-q').forEach((b,i)=>{b.setAttribute('aria-expanded','false');b.addEventListener('click',()=>{const item=b.closest('.faq-item');item.classList.toggle('open');b.setAttribute('aria-expanded',item.classList.contains('open'));});});
 const hero=document.querySelector('.vsl-section');new IntersectionObserver(entries=>document.getElementById('bottomCta').classList.toggle('show',!entries[0].isIntersecting&&entries[0].boundingClientRect.bottom<0)).observe(hero);
-</script></body></html>
+</script><script>
+// Saída para checkout é interação na página; não dispara IC nem Purchase da Meta.
+document.querySelectorAll('.js-checkout').forEach(function(button){
+ button.addEventListener('click',function(){
+  var location=button.closest('#vsl-compra')?'vsl':button.closest('#oferta')?'oferta':'fixo';
+  if(typeof window.clarity==='function')window.clarity('event','checkout_click_'+location);
+ });
+});
+</script>
+</body></html>
