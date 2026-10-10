@@ -349,7 +349,9 @@ src="https://www.facebook.com/tr?id=1281251029982984&ev=PageView&noscript=1"
   .offer-discount strong{color:#ef4444;background:#3e1919;padding:6px 14px;border-radius:999px;font-size:14px}
   .installment-detail{color:var(--muted);font-size:14px;line-height:1.6;margin:12px 0 20px}
   .installment-detail small{display:block;font-size:12px}
-  .big-price .installment-prefix{font-size:.42em}
+  .big-price{font-size:52px;margin-bottom:20px}.big-price .installment-prefix{font-size:.76em}
+  .cash-price{display:inline-block;border:1px solid #21c45d;border-radius:8px;padding:10px 20px;color:var(--fg);background:transparent;margin-bottom:10px;font-size:17px}
+  @media(max-width:600px){.big-price{font-size:40px}.cash-price{font-size:15px;padding:9px 16px}}
 </style>
 </head>
 <body>
@@ -483,7 +485,7 @@ src="https://www.facebook.com/tr?id=1281251029982984&ev=PageView&noscript=1"
       
       <div class="offer-discount"><span>De <s>R$297,90</s></span><strong>R$200 de desconto à vista</strong></div>
       <div class="big-price"><span class="installment-prefix">12x de </span>R$10,13</div>
-      <p class="installment-detail">Ou R$97,90 à vista<small>Parcelamento com acréscimo. Total em 12x: R$121,56.</small></p>
+      <p class="installment-detail"><span class="cash-price">R$97,90 à vista</span><small>Parcelamento com acréscimo. Total em 12x: R$121,56.</small></p>
 
       <ul class="offer-list">
         <li><svg class="i"><use href="#i-check"/></svg>Pague uma vez apenas</li>
